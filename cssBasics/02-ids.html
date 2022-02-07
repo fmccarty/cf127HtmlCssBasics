@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./01-classes.css">
-    <title>CSS Classes</title>
+    <link rel="stylesheet" href="./02-ids.css">
+    <title>CSS IDs</title>
 </head>
-
 <body>
-    <h1>HEY</h1>
-    <div class="css-class">
-        <p>Make the background of this div light gray.</p>
-    </div>
-    <div class="css-class">
-        <h1>To Do List</h1>
+    <h1>CSS IDs</h1>
+    <p>An ID is a UNIQUE identifier </p>
+    <div>
+        <h3>ID Notes</h3>
         <ul>
-            <li>Run a marathon</li>
-            <li>Get a coding job</li>
+            <li>In CSS an id starts with an octothorpe (pound, hashtag, number, etc.) - #</li>
+            <li>Example uses for IDs: Targeting a specific header or an about section</li>
+            <li>Each ID should only be used once per page - they are unique!
+                <br />
+                <em>This is important with JavaScript later on as well.</em>
+            </li>
+            <li>Use for one off styling.</li>
         </ul>
     </div>
-    <div class="css-class">
-        <h3>Classes</h3>
-        <p>A CSS class is an identifier of an element which can be used multiple times on a page.</p>
-        <p><strong>Memory device:</strong> Classes in school are periods (first and second period, etc.) so remember to
-            use a . whenever you want to reference a class.</p>
-        <ul>
-            <li>Classes start with . in the selector <strong>.anything-you-want-to-name-it</strong></li>
-            <li>The same class name can be used more than once within the same file.</li>
-            <li>The class keyword refers to the class name that you set in the HTML page.</li>
-        </ul>
+    <div>
+        <h1>IDs versus Classes</h1>
+        <h2>IDs</h2>
+        <p id="number-one">This id will be linked in the CSS page by a #.</p>
+        <p id="number-one number-two">You can't have two ids on an element. If you do, neither will be applied.</p>
+        <p id="number-two">You can't have two ids on an element. If you do, neither will be applied.</p>
+        <h2>Classes</h2>
+        <p class="first-class">Elements can have any number of classes.</p>
+        <p class="first-class second-class">For example, this element has two classes.</p>
+        <p id="number-one" class="first-class">You CAN use an id twice, but you shouldn't.</p>
     </div>
 </body>
-
 </html>
